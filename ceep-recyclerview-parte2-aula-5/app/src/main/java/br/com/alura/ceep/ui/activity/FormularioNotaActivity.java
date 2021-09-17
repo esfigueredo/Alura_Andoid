@@ -29,7 +29,6 @@ public class FormularioNotaActivity extends AppCompatActivity {
     private TextView titulo;
     private TextView descricao;
 
-    //teste
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

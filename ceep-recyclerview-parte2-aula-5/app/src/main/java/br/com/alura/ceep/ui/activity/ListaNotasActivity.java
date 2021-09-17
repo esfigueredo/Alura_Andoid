@@ -3,6 +3,7 @@ package br.com.alura.ceep.ui.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -41,6 +42,12 @@ public class ListaNotasActivity extends AppCompatActivity {
         List<Nota> todasNotas = pegaTodasNotas();
         configuraRecyclerView(todasNotas);
         configuraBotaoInsereNota();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_formulario_lista_nota, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void configuraBotaoInsereNota() {
